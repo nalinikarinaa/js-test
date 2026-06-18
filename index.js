@@ -7,12 +7,8 @@ function result(sentences) {
 
   for (let i = 0; i < sentences.length; i++) {
     let sentence = sentences[i];
-    // let word = sentence.trim().split(" ");
     let word = sentence.trim().split(/\s+/).length;
 
-    // if (word.length > max) {
-    //   max = word.length;
-    // }
     if (word > max) {
         max = word
     }
